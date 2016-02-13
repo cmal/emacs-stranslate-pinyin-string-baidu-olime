@@ -1,10 +1,18 @@
-#+TITLE: Emacs Translate Chinese Pinyin String Use Baidu Olime
+#+TITLE: Pinyin Before Point
 
   This is an Chinese-pinyin cloud input method. It uses "[[http://olime.baidu.com/][baidu olime]]" to translate the string before cursor. It needs an internet connection. Inspired by [[http://www.vim.org/scripts/script.php?script_id=2506][VimIM]].
 
-  使用 [[http://olime.baidu.com/py][百度输入法API]] 制作的拼音输入法，用于转换光标之前的拼音字符串。需要网络连接。
+  使用 [[http://olime.baidu.com/py][百度输入法API]] 制作的拼音输入法，用于转换光标之前的拼音字符串。需要网络连接。借鉴了VimIM的创意。
+* 缘起
+  在Emacs中编写文档的时候有时会转移到另一个buffer进行操作，完成操作切换回来的时候，往往忘记切换输入法，导致直接拼音上屏。如果此时删除已输入的拼音、重新输入，会导致重复工作。
+  有了这个插件之后，误输入的拼音不必删除，可以在输入之后调用 =conver-pinyin-before-point= 将其转换为拼音，然后切换输入法继续完成编辑。
+  由于调用了百度输入法API，所以需要网络连接。如果百度输入法API挂掉，则本插件不能完成工作。
+  另外Emacs的原生中文输入法 [[https://github.com/tumashu/chinese-pyim][chinese-pyim]] 正在进行该功能的编写。一旦完成，将不需要网络连接实现同样的功能。chinese-pyim是Emacs的原生输入法，值得使用。
 
-* Getting Started
+* 安装设置
   : (load-file "path/to/this/file")
   : (require 'pinyin-before-point)
-  : (global-set-key (kbd "C-6") 'convert-pinyin-before-point)
+  : (global-set-key (kbd "C-6") 'convert-pinyin-before-point) ;将Ctrl-6设为快捷键
+
+
+  
