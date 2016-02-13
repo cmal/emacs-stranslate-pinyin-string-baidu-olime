@@ -4,4 +4,7 @@
 
   使用 [[http://olime.baidu.com/py][百度输入法API]] 制作的拼音输入法，用于转换光标之前的拼音字符串。需要网络连接。
 
-* TODO Getting Started
+* Getting Started
+  : (load-file "path/to/this/file")
+  : (require 'pinyin-before-point)
+  : (global-set-key (kbd "C-6") 'convert-pinyin-before-point)
