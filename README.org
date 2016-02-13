@@ -1,0 +1,7 @@
+#+TITLE: Emacs Translate Chinese Pinyin String Use Baidu Olime
+
+* Emacs Translate Chinese Pinyin String Use Baidu Olime
+  This is an Chinese-pinyin cloud input method. It uses "[[http://olime.baidu.com/][baidu olime]]" to translate the string before cursor. It needs an internet connection. Inspired by [[http://www.vim.org/scripts/script.php?script_id=2506][VimIM]].
+  使用 [[http://olime.baidu.com/py][百度输入法API]] 制作的拼音输入法，用于转换光标之前的拼音字符串。需要网络连接。
+
+* TODO Getting Started
