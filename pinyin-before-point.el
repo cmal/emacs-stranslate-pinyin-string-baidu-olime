@@ -6,13 +6,14 @@
 ;; URL: https://github.com/cmal/emacs-translate-chinese-pinyin-string-use-baidu-olime
 
 ;; NEEDS AN INTERNET CONNECTION
+
 ;; Usage:
 ;;  (require 'pinyin-before-point)
 ;;  (global-set-key (kbd "C-6") 'convert-pinyin-before-point)
+
 ;; Test: baidushurufawoxuanzewoxihuan
 
-
-;; history:
+;; History:
 ;; 2016-02-14 :
 ;;   first version, translate full char string using baidu olime,
 
