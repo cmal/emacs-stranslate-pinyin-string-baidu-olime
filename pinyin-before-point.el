@@ -83,16 +83,14 @@
 
 (defun convert-pinyin-before-point ()
   (interactive)
-  (let* (
-         (string-before-point (read-tail-pinyin))
+  (let* ((string-before-point (read-tail-pinyin))
 	 (last-buffer (current-buffer))
 	 (chinese-list (vector-to-list (pinyin-to-vector string-before-point) 0))
 	 (breakpoint-list (vector-to-list (pinyin-to-vector string-before-point) 1))
 	 (py-length (length string-before-point))
 	 (fwidth (frame-width (selected-frame)))
 	 (modular (min 3 (max 2 (/ fwidth (+ 4 fwidth)))))
-	 c prefixes
-	)
+	 c prefixes)
       (save-window-excursion
 	(delete-other-windows)
 	(switch-to-buffer-other-window
