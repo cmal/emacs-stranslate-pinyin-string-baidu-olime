@@ -11,6 +11,11 @@
 ;;  (global-set-key (kbd "C-6") 'convert-pinyin-before-point)
 ;; Test: baidushurufawoxuanzewoxihuan
 
+
+;; history:
+;; 2016-02-14 :
+;;   first version, translate full char string using baidu olime,
+
 ;;; Code:
 
 (require 'json)
